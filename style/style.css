@@ -12,13 +12,63 @@
     font-family: 'Roboto-Regular';
     src: url(../fonts/Roboto-Regular.ttf);
 }
-
+/* общие стили */
 body {
+    margin: 0;
     font-family: 'Roboto-Medium', sans-serif;
+    background-color: #1C1C1C;
+    color: #fff;
 }
 
-.header {
+a {
+    color: #fff;
+    text-decoration: none;
+}
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 165px;
+    height: 50px;
+
+    font-family: 'Roboto-Medium';
+    font-size: 16px;
+    background: #F6762C;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;   
+}
+
+.conteiner {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+/* шапка */
+
+.header {
+    padding: 25px 0;
+}
+
+.header .conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header_logo {
@@ -30,9 +80,24 @@ body {
 }
 
 .header_list {
-
+    display: flex;
+    gap: 30px;
 }
 
-.btn {
-    
+.header_nav a {
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
 }
+
+.header_nav a.active {
+    opacity: 1;
+}
+
+.header_nav a:hover {
+    opacity: 0.9;
+}
+
+
+
