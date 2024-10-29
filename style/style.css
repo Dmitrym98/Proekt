@@ -53,7 +53,9 @@ ul {
 }
 
 .conteiner {
-    max-width: 1140px;
+box-sizing: border-box;
+
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
@@ -86,14 +88,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header_logo {
-
-}
-
-.header_nav {
-
 }
 
 .header_list {
@@ -202,3 +196,65 @@ img {
     padding-top: 13px;
 }
 
+/* список еды */
+
+.order {
+    background: #312F30;
+
+    padding: 60px 0;
+}
+
+.order .conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 90px;
+}
+
+.order-title {
+    font-family: 'Roboto-Medium';
+    font-size: 44px;
+
+    margin-bottom: 25px;
+}
+
+.order-desc {
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    opacity: 0.7;
+
+    margin-bottom: 15px;
+}
+
+.order-price {
+    font-family: 'Roboto-Medium';
+    font-size: 20px;
+    color: #F6762C;
+    opacity: 1;
+    letter-spacing: 0.1em;
+}
+
+.order-price-old {
+    font-family: 'Roboto-Medium';
+    font-size: 20px;
+    color: #F6762C;
+    opacity: 0.5;
+    letter-spacing: 0.1em;
+    text-decoration-line: line-through;
+}
+
+.order-price + .order-price {
+    margin-left: 3px;
+}
+
+.order .btn {
+    margin-top: 10px;
+}
+
+.order-text {
+    max-width: 360px;
+}
+
+.order-img {
+    max-width: 470px;
+}
