@@ -266,11 +266,15 @@ img {
 }
 
 .product {
+    padding: 150px 0;
 
 }
 
-.conteiner {
-
+.product .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .product-card {
@@ -278,7 +282,15 @@ img {
     min-height: 300px;
     box-sizing: border-box;
 
-    padding: 60px 0 60px 290px;
+    padding: 60px 30px 60px 290px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-card:nth-child(even) {
+    padding-left: 30px;
+    padding-right: 290px;
 }
 
 .product-title {
@@ -323,4 +335,53 @@ img {
 
 .card-queen {
     background-image: url(../image/product-1.jpg);
+}
+
+.card-pizza {
+    background-image: url(../image/product-2.jpg);
+}
+
+.card-burger {
+    background-image: url(../image/product-3.jpg);
+}
+
+.card-papa {
+    background-image: url(../image/product-4.jpg);
+}
+
+/* секция feedback */
+
+.feedback {
+
+}
+
+.fedback-img {
+
+}
+
+.feedback-text {
+    margin: 0;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-desc {
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.feedback-author {
+    font-family: 'Roboto-Medium';
+    font-size: 24px;
+    font-style: normal;
+}
+
+.feedback-subauthor {
+    font-family: 'Roboto-Medium';
+    font-size: 16px;
+    opacity: 0.7;
 }
