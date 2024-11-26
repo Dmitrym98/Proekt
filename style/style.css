@@ -352,26 +352,34 @@ img {
 /* секция feedback */
 
 .feedback {
-
+    padding-bottom: 200px;
 }
 
-.fedback-img {
-
+.feedback .conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 880px;
 }
 
 .feedback-text {
     margin: 0;
     text-align: center;
+    width: 370px;
 
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.feedback-text::before {
+    content: url(../image/icons/quote.svg);
 }
 
 .feedback-desc {
     font-family: 'Roboto-Regular';
     font-size: 16px;
     opacity: 0.7;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .feedback-author {
@@ -382,6 +390,26 @@ img {
 
 .feedback-subauthor {
     font-family: 'Roboto-Medium';
-    font-size: 16px;
+    font-size: 12px;
     opacity: 0.7;
+    display: block;
 }
+
+/* Download section */
+
+.download {
+    background-color: #312F30;
+    padding: 60px 0;
+}
+
+.download .conteiner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.download-title {
+    font-family: 'Roboto-Medium';
+    font-size: 40px;
+    font-style: normal;
+}
+
